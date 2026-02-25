@@ -1,10 +1,11 @@
 import json
 def main():
-    data={"name":"jk","age":25,"country":"seoul"}
+    data={"name":"jk","age":25,"country":"seoul","city":"delhi"}
     with open("data.json","w") as file:
         json.dump(data,file,indent=4)
     assert data["name"] == "jk"
     assert data["age"] == 25
     assert data["country"] =="seoul"
+    assert data["city"] =="delhi"
 if __name__ == "__main__":
         main()
